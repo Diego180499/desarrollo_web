@@ -1,6 +1,36 @@
+:root{
+    --gris: #757575;
+    --marron: #ff6600;
+    font-family: Arial;
+    --arial: Arial;
+}
+
+html{
+    font-size : 63%;
+}
+
+body{
+    font-size: 16px;
+}
+
 h1{
     text-align: center;
     background: darkblue;
     color:white;
+    font-size: 3.8rem;
+}
+
+.titulo {
+    background: var(--marron);
+    color: white;
+    font-family: var(--arial);
+}
+
+span{
+    font-size: 2rem;
+}
+
+.junior{
+    color: white;
 }
 
