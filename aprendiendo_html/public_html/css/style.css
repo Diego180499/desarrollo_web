@@ -3,6 +3,8 @@
     --marron: #ff6600;
     font-family: Arial;
     --arial: Arial;
+    --azul: #181190;
+    --centrar: 0 auto;
 }
 
 html{
@@ -21,9 +23,11 @@ h1{
 }
 
 .titulo {
+    text-align: center;
     background: var(--marron);
     color: white;
     font-family: var(--arial);
+    margin:var(--centrar);
 }
 
 span{
@@ -32,5 +36,24 @@ span{
 
 .junior{
     color: white;
+}
+
+.nav-principal{
+    padding:1rem;
+    background: var(--azul);
+}
+
+.nav-principal a{
+    color: white;
+    text-decoration: none;
+}
+
+.contenedor{
+    width:120rem;
+    margin: var(--centrar);
+}
+
+.navP-fondo{
+    background: var(--azul);
 }
 
