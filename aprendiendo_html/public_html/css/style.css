@@ -2,6 +2,7 @@
     --gris: #757575;
     --marron: #ff6600;
     font-family: Arial;
+    font-weight: bold;
     --arial: Arial;
     --azul: #181190;
     --centrar: 0 auto;
@@ -88,15 +89,46 @@ span{
     height: 100%;
     background-color: rgba(0,0,0,0.5);  
     padding: 30px;
+
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-subTitulo h1, .contenido-subTitulo p{
+    font-family: var(--arial);
+    font-weight: bold;
+}
+
+.icono{
+    display:flex;
+    align-items: flex-end;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.boton{
+    background-color: var(--azul);
+    color:white;
+    padding: 1rem 3rem;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    font-family: var(--arial);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+    width: 90%;
+    text-align: center;
 }
 
 .subTitulo{
-    background-image: url(../imagenes_iconos/programacion.jpg);
+    background-image: url(../imagenes_iconos/programar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 200px;
+    height: 250px;
 }
 
 @media (min-width:480px){
@@ -110,6 +142,11 @@ span{
 
     .subTitulo{
         height: 400px;
+    }
+
+    .boton{
+        width: auto;
+        align-items: center;
     }
 
 
