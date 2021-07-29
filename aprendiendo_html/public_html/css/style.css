@@ -12,6 +12,7 @@
 html{
     font-size : 62%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 
 *, *:before, *:after {
@@ -254,6 +255,31 @@ span{
     align-items: center;
 }
 
+.campo textarea{
+    height: 20rem;
+}
+
+.footer{
+    text-align: center;
+}
+
+/* Seccion de REDES SOCIALES*/
+
+.redes h2{
+    text-align: center;
+}
+
+.redes_sociales .facebook, .redes_sociales .instagram, .redes_sociales .whats {
+    text-align: center;
+}
+
+.redes_sociales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 /*todo sobre RESPONSIVE DESIGN*/
 @media (min-width:780px){
     .contenedor_servicios{
@@ -270,6 +296,22 @@ span{
         display: flex;
         justify-content: flex-end;
     }
+
+
+    .campos{  /*aqui es para distribuir los inputs, y que se vean distribuidos solo en computadoras*/
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 1.2rem;
+    }
+
+    .campo:nth-child(3){
+        grid-column: 1/3;
+    }
+
+    .campo:nth-child(4){
+        grid-column:1/3;
+    }
+
 }
 
 @media (min-width:480px){
@@ -284,5 +326,10 @@ span{
     .subTitulo{
         height: 400px;
     }
+
+    .redes_sociales{
+        flex-direction: row;
+    }
+
 }
 
