@@ -1,13 +1,14 @@
 :root{
     --gris: #757575;
     --marron: #ff6600;
+    --amarillo: #FCC300;
     font-family: Arial;
     font-weight: bold;
     --arial: Arial;
     --azul: #181190;
     --centrar: 0 auto;
 }
-
+/* HTML EN GENERAL*/
 html{
     font-size : 62%;
     box-sizing: border-box;
@@ -19,6 +20,7 @@ html{
 
 body{
     font-size: 13px;
+    background-image: linear-gradient(to top, #B9BFD1 0%, white 100%); /*esto es para generar un fondo degradado*/
 }
 
 h1{
@@ -27,6 +29,14 @@ h1{
     color:white;
     font-size: 3.8rem;
 }
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,122,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,122,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,122,0.54);
+}
+
+/* titulos */
 .tituloPrincipal {
     text-align: center;
     background: var(--marron);
@@ -51,6 +61,23 @@ span{
     color: white;
 }
 
+.boton{
+    background-color: var(--azul);
+    color:white;
+    padding: 1rem 3rem;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    font-family: var(--arial);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+/*Navegacion principal   inicio, sobre mi...*/
 .nav-principal{
     background: var(--azul);
     display:flex; /*este display sirve para darle direccion al nav, ya sea en fila o en columna*/
@@ -73,6 +100,7 @@ span{
     color:black;
 }
 
+
 .contenedor{
     max-width:120rem;
     margin: var(--centrar);
@@ -82,6 +110,7 @@ span{
     background: var(--azul);
 }
 
+/* todo sobre subtitulo "Desarrollador web junior" */
 .contenido-subTitulo{
     color:white;
     position: absolute;
@@ -108,27 +137,139 @@ span{
     font-size: 1.5rem;
 }
 
-.boton{
-    background-color: var(--azul);
-    color:white;
-    padding: 1rem 3rem;
-    margin-top: 2.5rem;
-    font-size: 2rem;
-    font-family: var(--arial);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 2px;
-    width: 90%;
-    text-align: center;
-}
-
+/* Agregamos imagen de fondo al subtitulo*/
 .subTitulo{
     background-image: url(../imagenes_iconos/programar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     height: 250px;
+    margin-bottom: 3rem;
+}
+
+/*todo sobre SERVICIOS*/
+.servicios{
+    margin: var(--centrar);
+    max-width: 100rem;
+    padding: 25px;
+    border-radius: 1rem;
+
+}
+.titulo_servicios{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: var(--centrar);
+    padding: 20px;
+
+}
+.servicios .diseño , .desarrollo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: var(--centrar);
+}
+
+.contenedor_servicios .iconos{
+    background-color: var(--azul); 
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_servicios, .parrafo{
+    line-height: 2;
+    font-size: 1.5rem;
+    font-family: var(--arial);
+    text-align: center;
+}
+
+.contenedor_servicios h3{
+    color:var(--marron);
+    font-weight: bold;
+}
+
+/*
+    Aquí va todo sobre el formulario de CONTACTANOS
+*/
+
+.contacto h2{
+    text-align: center;
+    color: var(--marron);
+}
+.formulario{
+    background-color: var(--amarillo);
+    width: min( 50rem , 100% );
+    margin: var(--centrar);
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    color: var(--azul);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.campos{
+
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+}
+
+.campo label{
+    font-size: 1.5rem;
+    font-family: var(--arial);
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.enviar .boton{
+    width: 100%;
+    align-items: center;
+}
+
+/*todo sobre RESPONSIVE DESIGN*/
+@media (min-width:780px){
+    .contenedor_servicios{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); /*aqui estamos diviendo nuestras columnas de servicios en 2 */
+        column-gap: 1.5rem;
+    }
+
+
+    .enviar .boton{
+        width: auto;
+    }
+    .enviar{
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 @media (min-width:480px){
@@ -143,12 +284,5 @@ span{
     .subTitulo{
         height: 400px;
     }
-
-    .boton{
-        width: auto;
-        align-items: center;
-    }
-
-
 }
 

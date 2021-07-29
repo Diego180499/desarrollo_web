@@ -37,56 +37,73 @@
         </section>
 
 
-        <main>
-            <section>
-                <h3>Diseño Web</h3>
-                <p>Me dedico al diseño web dándole la mejor vista a sus páginas con responsive design</p>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
-                    <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
-                    </svg>
-                </p>
-            </section>
-            <section>
-                <h3>Desarrollo Backend</h3>
-                <p>Desarrollo la programación del lado del servidor como bases de datos</p>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code-minus" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M9 12h6" />
-                    <path d="M6 19a2 2 0 0 1 -2 -2v-4l-1 -1l1 -1v-4a2 2 0 0 1 2 -2" />
-                    <path d="M18 19a2 2 0 0 0 2 -2v-4l1 -1l-1 -1v-4a2 2 0 0 0 -2 -2" />
-                    </svg>
-                </p>
+        <main class="servicios sombra">
+            <h2 class="titulo_servicios">Mis Servicios</h2>
+            <div class="contenedor_servicios">
+                <section class="diseño">
+                    <h3>Diseño Web</h3>
+                    <div class="iconos">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                            </svg>
+                        </p>
+                    </div>
+                    <p class="parrafo">Me dedico al diseño web dándole la mejor vista a sus páginas con responsive design</p>
+                </section>
+                <section class="desarrollo">
+                    <h3>Desarrollo Backend</h3>
+                    <div class="iconos">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database" width="64" height="64" viewBox="0 0 24 24" stroke-width="2" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>
+                            <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                            <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+                            </svg>
+                        </p>
+                    </div>
+                    <p class="parrafo">Desarrollo la programación del lado del servidor como bases de datos</p>
+                </section>
+            </div>
+
+            <section class="contacto">
+                <h2>Contáctanos</h2>
+                <form class="formulario">
+
+                    <fieldset>
+                        <legend>Envía tus datos</legend>
+                        <div class="campos">
+                            <div class="campo">
+                                <label>Nombre</label>
+                                <input class ="input-text" type="text" placeholder="Nombre">
+                            </div>
+
+                            <div class="campo">
+                                <label>Teléfono</label>
+                                <input class ="input-text" type="tel" placeholder="Teléfono">
+                            </div>
+
+                            <div class="campo">
+                                <label>Correo Electrónico</label>
+                                <input class ="input-text" type="email" placeholder="correo">
+                            </div>
+
+                            <div class="campo">
+                                <label>Mensaje</label>
+                                <textarea class ="input-text" placeholder="Envíanos un mensaje"></textarea>
+                            </div>
+                        </div>
+                        <div class="enviar">
+                            <input class="boton" type="submit" value="Enviar">
+                        </div>
+
+                    </fieldset>
+                </form>
             </section>
         </main>
-        <section>
-            <h2>Contáctanos</h2>
-            <form>
-                <fieldset>
-                    <legend>Envíanos tus datos y nos pondremos en contacto</legend>
-                    <div>
-                        <label>Nombre</label>
-                        <input type="text" placeholder="Nombre">
-                    </div>
-                    <div>
-                        <label>Apellido</label>
-                        <input type="text" placeholder="Apellido">
-                    </div>
-                    <div>
-                        <label>Correo Electrónico</label>
-                        <input type="text" placeholder="correo">
-                    </div>
-                    <div>
-                        <label>Mensaje</label>
-                        <textarea placeholder="Envíanos un mensaje"></textarea>
-                    </div>
-                    <input type="submit" value="Enviar">
-                </fieldset>
-            </form>
-        </section>
         <section>
             <h2>Redes Sociales</h2>
             <nav>
